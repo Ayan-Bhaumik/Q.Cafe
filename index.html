@@ -335,7 +335,15 @@
       </div>
     </section>
     <!-- Copyright -->
-    <p class="copyright">&#169; QCAFE</p>
+    <p class="copyright">&#169; <span id="current-year"></span> QCAFE. All rights reserved.</p>
+
+    <!-- JavaScript for Auto Year -->
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+      // Insert the current year into the span with id "current-year"
+      document.getElementById("current-year").textContent = currentYear;
+    </script>
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Swiper JS -->
